@@ -1,5 +1,5 @@
 const { describe, it, expect, beforeAll, afterAll } = require('@jest/globals');
-const { Deck } = require('../src/models/Deck.js');
+const { Deck } = require('../src/models/index.js');
 const { db } = require('../src/db/config.js');
 
 // Let's copy from the user file as it saves us some time
@@ -28,4 +28,5 @@ describe('Deck', () => {
   it("has the correct XP", async function () {
     expect(deck.xp).toBe(20);
   })
+
 })

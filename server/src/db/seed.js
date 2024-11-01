@@ -1,5 +1,5 @@
 const { db } = require('./config')
-const { User, Attack } = require('../models')
+const { User, Deck, Card, Attack } = require('../models/index')
 
 function randInt (a, b) {
   return a + Math.floor(Math.random() * (b - a))

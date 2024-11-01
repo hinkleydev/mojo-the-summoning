@@ -1,6 +1,6 @@
 const { describe, it, expect, beforeAll, afterAll } = require('@jest/globals');
 const { db } = require('../src/db/config.js');
-const { Card } = require('../src/models/Card.js');
+const { Card } = require('../src/models/index.js');
 
 // define in global scope
 let card
