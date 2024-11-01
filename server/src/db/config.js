@@ -1,10 +1,14 @@
 // add your database connection here
 
-const { Sequelize } = require("sequelize");
+const { Sequelize, DataTypes, Model } = require("sequelize");
 
 const db = new Sequelize( {
     dialect: "sqlite",
     storage: "./game.db"
 })
 
-module.exports = {db}
+module.exports = {
+    db,
+    DataTypes,
+    Model
+}
