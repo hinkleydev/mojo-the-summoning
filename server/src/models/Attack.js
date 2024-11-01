@@ -9,7 +9,7 @@ Attack.init({
     },
     title: DataTypes.STRING,
     mojoCost: DataTypes.INTEGER,
-    stanimaCost: DataTypes.INTEGER
+    staminaCost: DataTypes.INTEGER
 }, {
     sequelize: db
 });

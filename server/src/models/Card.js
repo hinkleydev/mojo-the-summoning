@@ -9,7 +9,7 @@ Card.init({
     },
     name: DataTypes.STRING,
     mojo: DataTypes.INTEGER,
-    stanima: DataTypes.INTEGER,
+    stamina: DataTypes.INTEGER,
     imgUrl: DataTypes.STRING
 }, {
     sequelize: db

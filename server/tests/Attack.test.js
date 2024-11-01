@@ -8,7 +8,7 @@ let attack
 // clear db and create new user before tests
 beforeAll(async () => {
   await db.sync({ force: true })
-  attack = await Attack.create({ title: 'strike', mojoCost: 1, stanimaCost: 4 })
+  attack = await Attack.create({ title: 'strike', mojoCost: 1, staminaCost: 4 })
 })
 
 // clear db after tests
@@ -27,7 +27,7 @@ describe('Attack', () => {
     expect(attack.mojoCost).toBe(1);
   });
 
-  it("has the right stanima cost", async function () {
-    expect(attack.stanimaCost).toBe(4);
+  it("has the right stamina cost", async function () {
+    expect(attack.staminaCost).toBe(4);
   });
 })

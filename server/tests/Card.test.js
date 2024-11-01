@@ -8,7 +8,7 @@ let card
 // clear db and create new user before tests
 beforeAll(async () => {
   await db.sync({ force: true })
-  card = await Card.create({ name: 'magic missile', mojo: 3, stanima: 30, imgUrl: 'https://example.com/' })
+  card = await Card.create({ name: 'magic missile', mojo: 3, stamina: 30, imgUrl: 'https://example.com/' })
 })
 
 // clear db after tests
@@ -27,8 +27,8 @@ describe('Card', () => {
     expect(card.mojo).toBe(3);
   });
 
-  it("has the right amount of stanima", async function () {
-    expect(card.stanima).toBe(30);
+  it("has the right amount of stamina", async function () {
+    expect(card.stamina).toBe(30);
   });
 
   it("has the correct imgUrl", async function () {
